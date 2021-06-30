@@ -1,0 +1,277 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CC51DB7-FB54-410A-958C-53F2BD0B84C6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>twentyfourbyseven</RootNamespace>
+    <AssemblyName>twentyfourbyseven</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\all.min.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\simple-line-icons.css" />
+    <Content Include="Assets\css\slick.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\fonts\Simple-Line-Iconsb26c.svg" />
+    <Content Include="Assets\fonts\slick.svg" />
+    <Content Include="Assets\images\ads\ad-360.png" />
+    <Content Include="Assets\images\ads\ad-750.png" />
+    <Content Include="Assets\images\ajax-loader.gif" />
+    <Content Include="Assets\images\favicon.png" />
+    <Content Include="Assets\images\insta\insta-1.jpg" />
+    <Content Include="Assets\images\insta\insta-2.jpg" />
+    <Content Include="Assets\images\insta\insta-3.jpg" />
+    <Content Include="Assets\images\insta\insta-4.jpg" />
+    <Content Include="Assets\images\insta\insta-5.jpg" />
+    <Content Include="Assets\images\insta\insta-6.jpg" />
+    <Content Include="Assets\images\logo.svg" />
+    <Content Include="Assets\images\map-bg.png" />
+    <Content Include="Assets\images\other\about.jpg" />
+    <Content Include="Assets\images\other\author-sm.png" />
+    <Content Include="Assets\images\other\avatar-about.png" />
+    <Content Include="Assets\images\other\avatar-lg.png" />
+    <Content Include="Assets\images\other\comment-1.png" />
+    <Content Include="Assets\images\other\comment-2.png" />
+    <Content Include="Assets\images\other\comment-3.png" />
+    <Content Include="Assets\images\other\hero.jpg" />
+    <Content Include="Assets\images\posts\editor-lg.jpg" />
+    <Content Include="Assets\images\posts\editor-sm-1.jpg" />
+    <Content Include="Assets\images\posts\editor-sm-2.jpg" />
+    <Content Include="Assets\images\posts\editor-sm-3.jpg" />
+    <Content Include="Assets\images\posts\editor-sm-4.jpg" />
+    <Content Include="Assets\images\posts\featured-lg.jpg" />
+    <Content Include="Assets\images\posts\featured-md-1.jpg" />
+    <Content Include="Assets\images\posts\featured-md-2.jpg" />
+    <Content Include="Assets\images\posts\featured-md-3.jpg" />
+    <Content Include="Assets\images\posts\featured-md-4.jpg" />
+    <Content Include="Assets\images\posts\featured-xl-1.jpg" />
+    <Content Include="Assets\images\posts\featured-xl-2.jpg" />
+    <Content Include="Assets\images\posts\inspiration-1.jpg" />
+    <Content Include="Assets\images\posts\inspiration-2.jpg" />
+    <Content Include="Assets\images\posts\inspiration-3.jpg" />
+    <Content Include="Assets\images\posts\latest-sm-1.jpg" />
+    <Content Include="Assets\images\posts\latest-sm-2.jpg" />
+    <Content Include="Assets\images\posts\latest-sm-3.jpg" />
+    <Content Include="Assets\images\posts\latest-sm-4.jpg" />
+    <Content Include="Assets\images\posts\post-lg-1.jpg" />
+    <Content Include="Assets\images\posts\post-lg-2.jpg" />
+    <Content Include="Assets\images\posts\post-lg-3.jpg" />
+    <Content Include="Assets\images\posts\post-lg-4.jpg" />
+    <Content Include="Assets\images\posts\post-md-1.jpg" />
+    <Content Include="Assets\images\posts\post-md-10.jpg" />
+    <Content Include="Assets\images\posts\post-md-2.jpg" />
+    <Content Include="Assets\images\posts\post-md-3.jpg" />
+    <Content Include="Assets\images\posts\post-md-4.jpg" />
+    <Content Include="Assets\images\posts\post-md-5.jpg" />
+    <Content Include="Assets\images\posts\post-md-6.jpg" />
+    <Content Include="Assets\images\posts\post-md-7.jpg" />
+    <Content Include="Assets\images\posts\post-md-8.jpg" />
+    <Content Include="Assets\images\posts\post-md-9.jpg" />
+    <Content Include="Assets\images\posts\post-xl-1.jpg" />
+    <Content Include="Assets\images\posts\post-xl-2.jpg" />
+    <Content Include="Assets\images\posts\post-xl-3.jpg" />
+    <Content Include="Assets\images\posts\post-xl-4.jpg" />
+    <Content Include="Assets\images\posts\single-cover.jpg" />
+    <Content Include="Assets\images\posts\single-sm-1.jpg" />
+    <Content Include="Assets\images\posts\tabs-1.jpg" />
+    <Content Include="Assets\images\posts\tabs-2.jpg" />
+    <Content Include="Assets\images\posts\tabs-3.jpg" />
+    <Content Include="Assets\images\posts\tabs-4.jpg" />
+    <Content Include="Assets\images\posts\trending-lg-1.jpg" />
+    <Content Include="Assets\images\posts\trending-lg-2.jpg" />
+    <Content Include="Assets\images\posts\trending-sm-1.jpg" />
+    <Content Include="Assets\images\posts\trending-sm-2.jpg" />
+    <Content Include="Assets\images\posts\trending-sm-3.jpg" />
+    <Content Include="Assets\images\posts\trending-sm-4.jpg" />
+    <Content Include="Assets\images\wave.svg" />
+    <Content Include="Assets\images\widgets\widget-carousel-1.jpg" />
+    <Content Include="Assets\images\widgets\widget-carousel-2.jpg" />
+    <Content Include="Assets\imgs\Contact.png" />
+    <Content Include="Assets\imgs\culture.jpg" />
+    <Content Include="Assets\imgs\fe-2.png" />
+    <Content Include="Assets\imgs\fe-4.png" />
+    <Content Include="Assets\imgs\fe-5.png" />
+    <Content Include="Assets\imgs\fe-7.png" />
+    <Content Include="Assets\imgs\fe1.png" />
+    <Content Include="Assets\imgs\fe2.png" />
+    <Content Include="Assets\imgs\ff2.png" />
+    <Content Include="Assets\imgs\ff2f.jpg" />
+    <Content Include="Assets\imgs\freedomtoexplore.png" />
+    <Content Include="Assets\imgs\freedomtoexplore1.jpg" />
+    <Content Include="Assets\imgs\freedomtogrow.png" />
+    <Content Include="Assets\imgs\freedomtogrow1.jpg" />
+    <Content Include="Assets\imgs\logo.png" />
+    <Content Include="Assets\imgs\main.png" />
+    <Content Include="Assets\imgs\bg.png" />
+    <Content Include="Assets\imgs\main2.png" />
+    <Content Include="Assets\imgs\main3.png" />
+    <Content Include="Assets\js\bootstrap.min.js" />
+    <Content Include="Assets\js\custom.js" />
+    <Content Include="Assets\js\jquery.min.js" />
+    <Content Include="Assets\js\jquery.sticky-sidebar.min.js" />
+    <Content Include="Assets\js\popper.min.js" />
+    <Content Include="Assets\js\slick.min.js" />
+    <Content Include="Assets\webfonts\fa-brands-400.svg" />
+    <Content Include="Assets\webfonts\fa-regular-400.svg" />
+    <Content Include="Assets\webfonts\fa-solid-900.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Assets\fonts\Simple-Line-Iconsb26c.eot" />
+    <Content Include="Assets\fonts\Simple-Line-Iconsb26c.ttf" />
+    <Content Include="Assets\fonts\Simple-Line-Iconsb26c.woff" />
+    <Content Include="Assets\fonts\Simple-Line-Iconsb26c.woff2" />
+    <Content Include="Assets\fonts\slick.eot" />
+    <Content Include="Assets\fonts\slick.ttf" />
+    <Content Include="Assets\fonts\slick.woff" />
+    <Content Include="Assets\fonts\slickd41d.eot" />
+    <Content Include="Assets\webfonts\fa-brands-400.eot" />
+    <Content Include="Assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="Assets\webfonts\fa-brands-400.woff" />
+    <Content Include="Assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="Assets\webfonts\fa-brands-400d41d.eot" />
+    <Content Include="Assets\webfonts\fa-regular-400.eot" />
+    <Content Include="Assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="Assets\webfonts\fa-regular-400.woff" />
+    <Content Include="Assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="Assets\webfonts\fa-regular-400d41d.eot" />
+    <Content Include="Assets\webfonts\fa-solid-900.eot" />
+    <Content Include="Assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="Assets\webfonts\fa-solid-900.woff" />
+    <Content Include="Assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="Assets\webfonts\fa-solid-900d41d.eot" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62879</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62879/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

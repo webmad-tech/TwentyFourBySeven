@@ -150,8 +150,8 @@ $(document).ready(function() {
     /*=========================================================================
             Sticky header
     =========================================================================*/
-    var $header = $(".header-default, .header-personal nav, .header-classic .header-bottom"),
-      $clone = $header.before($header.clone().addClass("clone"));
+    //var $header = $(".header-default, .header-personal nav, .header-classic .header-bottom"),
+    //  $clone = $header.before($header.clone().addClass("clone"));
 
     $(window).on("scroll", function() {
       var fromTop = $(window).scrollTop();
